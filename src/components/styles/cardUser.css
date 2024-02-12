@@ -1,0 +1,77 @@
+.card__container {
+  /* Estilos para cada tarjeta de usuario */
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+
+  /* Añade estilos para el diseño de la cuadrícula */
+  width: calc(
+    33.33% - 20px
+  ); /* Calcula el ancho de cada tarjeta, considerando un margen de 10px en cada lado */
+  margin: 10px; /* Espacio entre tarjetas */
+  float: left; /* Hace que las tarjetas se coloquen en línea */
+  box-sizing: border-box; /* Incluye el padding y el border en el ancho total de la tarjeta */
+
+  /* Media query para dispositivos móviles */
+  @media (max-width: 768px) {
+    width: calc(
+      100% - 20px
+    ); /* Cambia el ancho de la tarjeta a 100% para que ocupe toda la pantalla */
+    margin: 10px auto; /* Centra la tarjeta en la pantalla */
+    float: none; /* Elimina la propiedad float para que la tarjeta no se coloque en línea */
+  }
+}
+
+.card__container:hover {
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+h3 {
+  margin-bottom: 10px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  margin-bottom: 8px;
+}
+
+span {
+  margin-right: 5px;
+}
+
+.card__btn {
+  background-color: #ff6347;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+.card_btn_1 {
+  background-color: #1e90ff;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.form__conteiner {
+  /* Agrega estas líneas a tu código existente */
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.form__btn {
+  /* Agrega estas líneas a tu código existente */
+  align-self: flex-end;
+  margin-top: -50px; /* Ajusta este valor según sea necesario */
+}
